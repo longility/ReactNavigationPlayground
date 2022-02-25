@@ -4,7 +4,7 @@ import {View, Text} from 'react-native';
 import type {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {RouteParamList} from '../navigation/route-param-list';
 
-type ProfileScreenProps = NativeStackScreenProps<RouteParamList, 'Profile'>;
+type ProfileScreenProps = NativeStackScreenProps<RouteParamList>;
 
 const ProfileScreen = ({}: ProfileScreenProps) => {
   return (

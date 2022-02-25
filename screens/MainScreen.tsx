@@ -4,18 +4,18 @@ import {View, Text, Button} from 'react-native';
 import type {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {RouteParamList} from '../navigation/route-param-list';
 
-type HomeScreenProps = NativeStackScreenProps<RouteParamList, 'Home'>;
+type MainScreenProps = NativeStackScreenProps<RouteParamList>;
 
-const HomeScreen = ({navigation}: HomeScreenProps) => {
+const MainScreen = ({navigation}: MainScreenProps) => {
   return (
     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
       <Text>Home Screen</Text>
       <Button
-        title="Go to Profile"
-        onPress={() => navigation.navigate('Profile')}
+        title="Go to Products"
+        onPress={() => navigation.navigate('ProductBrowsing')}
       />
     </View>
   );
 };
 
-export default HomeScreen;
+export default MainScreen;
