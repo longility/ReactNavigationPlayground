@@ -1,8 +1,8 @@
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import React from 'react';
-import ProfileScreen from '../screens/ProfileScreen';
 import Home from './Home';
+import Profile from './Profile';
 
 const BottomTab = createBottomTabNavigator();
 
@@ -11,7 +11,7 @@ const Navigation = () => {
     <NavigationContainer>
       <BottomTab.Navigator initialRouteName="Home">
         <BottomTab.Screen name="Home" component={Home} />
-        <BottomTab.Screen name="Profile" component={ProfileScreen} />
+        <BottomTab.Screen name="Profile" component={Profile} />
       </BottomTab.Navigator>
     </NavigationContainer>
   );
