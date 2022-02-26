@@ -2,10 +2,10 @@ import React from 'react';
 import {View, Button, FlatList, SafeAreaView} from 'react-native';
 
 import type {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {RouteParamList} from '../../navigation/route-param-list';
+import {HomeStackParamList} from '../../navigation/route-param-list';
 import {products} from '../../data/products';
 
-type ProductBrowsingScreenProps = NativeStackScreenProps<RouteParamList>;
+type ProductBrowsingScreenProps = NativeStackScreenProps<HomeStackParamList>;
 
 const ProductBrowsingScreen = ({navigation}: ProductBrowsingScreenProps) => {
   const handleOnProductPress = (id: string) => {

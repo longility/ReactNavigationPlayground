@@ -2,10 +2,10 @@ import React, {useMemo} from 'react';
 import {View, Text} from 'react-native';
 
 import type {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {RouteParamList} from '../../navigation/route-param-list';
+import {ProductParamList} from '../../navigation/route-param-list';
 import {products} from '../../data/products';
 
-type ProductScreenProps = NativeStackScreenProps<RouteParamList, 'Product'>;
+type ProductScreenProps = NativeStackScreenProps<ProductParamList, 'Product'>;
 
 const ProductScreen = ({route}: ProductScreenProps) => {
   const product = useMemo(

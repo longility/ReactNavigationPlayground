@@ -2,10 +2,10 @@ import React from 'react';
 import {View, Button, FlatList, SafeAreaView} from 'react-native';
 
 import type {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {RouteParamList} from '../../navigation/route-param-list';
+import {ProfileStackParamList} from '../../navigation/route-param-list';
 import {orders} from '../../data/orders';
 
-type OrderHistoryScreenProps = NativeStackScreenProps<RouteParamList>;
+type OrderHistoryScreenProps = NativeStackScreenProps<ProfileStackParamList>;
 
 const OrderHistoryScreen = ({navigation}: OrderHistoryScreenProps) => {
   const handleOnOrderPress = (id: string) => {

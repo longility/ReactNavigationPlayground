@@ -2,11 +2,11 @@ import React, {useMemo} from 'react';
 import {View, Text, FlatList, Button} from 'react-native';
 
 import type {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {RouteParamList} from '../../navigation/route-param-list';
+import {ProfileStackParamList} from '../../navigation/route-param-list';
 import {orders} from '../../data/orders';
 import {products} from '../../data/products';
 
-type OrderScreenProps = NativeStackScreenProps<RouteParamList, 'Order'>;
+type OrderScreenProps = NativeStackScreenProps<ProfileStackParamList, 'Order'>;
 
 const OrderScreen = ({navigation, route}: OrderScreenProps) => {
   const order = useMemo(
